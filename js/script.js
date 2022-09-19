@@ -10,6 +10,17 @@
    названия переменных должны быть понятными
 
 */
+const objectA = {
+   a: 10,
+   b: true
+}
 
+const copyOfA = objectA
+console.log(copyOfA);
 
-console.log('Hello World!');
+copyOfA.a = 20;
+console.log(objectA);
+
+copyOfA.c = 'abc'
+console.log(copyOfA);
+console.log(objectA);
